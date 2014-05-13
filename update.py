@@ -7,7 +7,8 @@ agUpdate = "apt-get -q update"
 agUpgrade = "apt-get -qy upgrade"
 rpiUpdate = "rpi-update"
 reboot = "/sbin/shutdown -r +1"
-commands = [agUpdate, agUpgrade, rpiUpdate]
+pipUpgrade = "pip-review --auto"
+commands = [agUpdate, agUpgrade, pipUpgrade, rpiUpdate]
 
 try:
 	for cmd in commands:
